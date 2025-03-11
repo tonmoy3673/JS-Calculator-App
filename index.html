@@ -15,43 +15,45 @@
     <!-- ======= Main Container ======= -->
     <main class="main-container">
         <!-- ====== Calculator Part ===== -->
-         <form id="calculator-container">
+         <section id="calculator-container">
             <!-- ========= display div ==== -->
-            <div>
-                <input class="display" value="0" type="text" name="display">
-            </div>
-            <!-- ============= button part ======== -->
-             <div class="row">
-                <input type="button" class="btn" value="AC">
-                <input type="button" class="btn" value="DEL">
-                <input type="button" class="btn" value="%">
-                <input type="button" class="btn" value="/">
-             </div>
-             <div class="row">
-                <input type="button" class="btn" value="7">
-                <input type="button" class="btn" value="8">
-                <input type="button" class="btn" value="9">
-                <input type="button" class="btn" value="*">
-             </div>
-             <div class="row">
-                <input type="button" class="btn" value="4">
-                <input type="button" class="btn" value="5">
-                <input type="button" class="btn" value="6">
-                <input type="button" class="btn" value="-">
-             </div>
-             <div class="row">
-                <input type="button" class="btn" value="1">
-                <input type="button" class="btn" value="2">
-                <input type="button" class="btn" value="3">
-                <input type="button" class="btn" value="+">
-             </div>
-             <div class="row">
-                <input type="button" class="btn" value="00">
-                <input type="button" class="btn" value="0">
-                <input type="button" class="btn" value=".">
-                <input type="button" class="btn" value="=">
-             </div>
-         </form>
+            <form>
+                <div class="display">
+                    <input  value="0" type="text" name="display">
+                </div>
+                <!-- ============= button part ======== -->
+                 <div class="row">
+                    <input type="button" class="btn-operator" value="AC">
+                    <input type="button" class="btn-operator" value="DEL">
+                    <input type="button" class="btn-operator" value="%">
+                    <input type="button" class="btn-operator" value="/">
+                 </div>
+                 <div class="row">
+                    <input type="button" class="btn" value="7">
+                    <input type="button" class="btn" value="8">
+                    <input type="button" class="btn" value="9">
+                    <input type="button" class="btn-operator" value="*">
+                 </div>
+                 <div class="row">
+                    <input type="button" class="btn" value="4">
+                    <input type="button" class="btn" value="5">
+                    <input type="button" class="btn" value="6">
+                    <input type="button" class="btn-operator" value="-">
+                 </div>
+                 <div class="row">
+                    <input type="button" class="btn" value="1">
+                    <input type="button" class="btn" value="2">
+                    <input type="button" class="btn" value="3">
+                    <input type="button" class="btn-operator" value="+">
+                 </div>
+                 <div class="row">
+                    <input type="button" class="btn" value="00">
+                    <input type="button" class="btn" value="0">
+                    <input type="button" class="btn" value=".">
+                    <input type="button" class="btn-equal" value="=">
+                 </div>
+            </form>
+         </section>
     </main>
 
     <!-- ============ JS file ======== -->
