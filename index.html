@@ -24,9 +24,9 @@
                 <!-- ============= button part ======== -->
                  <div class="row">
                     <input type="button" onclick="display.value='0'" class="btn-operator" value="AC">
-                    <input type="button" class="btn-operator" value="DEL">
-                    <input type="button" class="btn-operator" value="%">
-                    <input type="button" class="btn-operator" value="/">
+                    <input type="button" onclick="display.value=display.value.toString().slice(0,-1) || '0'" class="btn-operator" value="DEL">
+                    <input type="button" onclick="display.value==='0'||display.value===''?display.value='%':display.value+='%' " class="btn-operator" value="%">
+                    <input type="button" onclick="display.value ==='0'||display.value===''? display.value='/':display.value+='/' " class="btn-operator" value="/">
                  </div>
                  <div class="row">
                     <input type="button" onclick="display.value === '0' || display.value ===''? display.value='7': display.value +='7'" class="btn" value="7">
@@ -41,10 +41,10 @@
                     <input type="button" onclick="display.value === '0' || display ==='' ? display.value='-':display.value+='-' " class="btn-operator" value="-">
                  </div>
                  <div class="row">
-                    <input type="button" class="btn" value="1">
-                    <input type="button" class="btn" value="2">
-                    <input type="button" class="btn" value="3">
-                    <input type="button" class="btn-operator" value="+">
+                    <input type="button" onclick="display.value==='0' || display.value==='' ?display.value='1':display.value+='1' " class="btn" value="1">
+                    <input type="button" onclick="display.value==='0' || display.value==='' ?display.value='2':display.value+='2' " class="btn" value="2">
+                    <input type="button" onclick="display.value==='0' || display.value==='' ?display.value='3':display.value+='3' " class="btn" value="3">
+                    <input type="button" onclick="display.value==='0' || display.value==='' ?display.value='+':display.value+='+' " class="btn-operator" value="+">
                  </div>
                  <div class="row">
                     <input type="button" onclick="display.value === '0' || display.value ===''? display.value+='00': display.value+='00' " class="btn" value="00">
