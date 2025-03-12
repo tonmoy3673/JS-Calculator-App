@@ -17,7 +17,7 @@
     <!-- ======= Main Container ======= -->
     <main class="main-container">
       <div class="mode">
-         <img id="img-mode" src="/images/moon.png">
+         <img onclick="changeMode()" id="img-mode" src="/images/moon.png">
       </div>
         <!-- ====== Calculator Part ===== -->
          <section id="calculator-container">
@@ -58,7 +58,13 @@
                     <input type="button" onclick="display.value= eval(display.value) " class="btn-equal" value="=">
                  </div>
             </form>
+
          </section>
+
+         <!-- ============= Developer ========= -->
+          <div class="author-text">
+            <small class="author">&copy; 2025. Developed by Tonmoy</small>
+          </div>
     </main>
 
     <!-- ============ JS file ======== -->
