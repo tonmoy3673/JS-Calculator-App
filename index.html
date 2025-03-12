@@ -12,8 +12,13 @@
      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+   <!-- ============ Dark/Light Mode========== -->
+   
     <!-- ======= Main Container ======= -->
     <main class="main-container">
+      <div class="mode">
+         <img id="img-mode" src="/images/moon.png">
+      </div>
         <!-- ====== Calculator Part ===== -->
          <section id="calculator-container">
             <!-- ========= display div ==== -->
@@ -32,7 +37,7 @@
                     <input type="button" onclick="display.value === '0' || display.value ===''? display.value='7': display.value +='7'" class="btn" value="7">
                     <input type="button" onclick="display.value === '0' || display.value ===''? display.value='8': display.value +='8' " class="btn" value="8">
                     <input type="button" onclick="display.value === '0' || display.value ===''? display.value='9': display.value +='9' " class="btn"  class="btn" value="9">
-                    <input type="button" onclick="display.value === '0' || display.value ===''? display.value='*': display.value +='*' " class="btn"  class="btn-operator" value="*">
+                    <input type="button" onclick="display.value === '0' || display.value ===''? display.value='*': display.value +='*' "  class="btn-operator" value="*">
                  </div>
                  <div class="row">
                     <input type="button" onclick="display.value==='0' || display.value==''?display.value='4': display.value+='4' " class="btn" value="4">

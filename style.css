@@ -23,6 +23,7 @@ body{
     width:100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -72,6 +73,17 @@ form .display input{
     box-shadow: none;
     
 }
-/* .btn-operator{
-    color: #fb7c14;
-} */
+.btn-operator{
+    color: #f5ac0e;
+}
+
+.btn-equal{
+    background: #fb7c14;
+}
+.mode{
+   margin-bottom: 20px; 
+}
+#img-mode{
+    width: 40px;
+    cursor: pointer;
+}
